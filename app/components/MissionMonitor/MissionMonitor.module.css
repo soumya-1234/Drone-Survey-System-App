@@ -1,0 +1,192 @@
+.monitor {
+  @apply h-full flex flex-col;
+}
+
+.header {
+  @apply p-6 bg-white border-b border-gray-200 flex justify-between items-center;
+}
+
+.missionInfo {
+  @apply flex flex-col gap-2;
+}
+
+.title {
+  @apply text-2xl font-semibold text-gray-900;
+}
+
+.details {
+  @apply flex gap-4 text-sm text-gray-500;
+}
+
+.content {
+  @apply flex-1 grid grid-cols-[1fr,400px] gap-4 p-4 bg-gray-50 h-[calc(100vh-100px)];
+}
+
+.mapContainer {
+  @apply bg-white rounded-lg shadow-sm overflow-hidden;
+}
+
+.map {
+  @apply w-full h-full;
+}
+
+.sidebar {
+  @apply flex flex-col gap-4 overflow-y-auto;
+}
+
+/* Progress Component */
+.progress {
+  @apply bg-white rounded-lg shadow-sm p-6;
+}
+
+.progressHeader {
+  @apply flex justify-between items-center mb-6;
+}
+
+.statusBadge {
+  @apply px-3 py-1 rounded-full text-xs font-medium text-white capitalize;
+}
+
+.progressStats {
+  @apply flex flex-col gap-4 mb-6;
+}
+
+.stat {
+  @apply flex flex-col gap-2;
+}
+
+.statLabel {
+  @apply text-sm text-gray-500;
+}
+
+.progressBar {
+  @apply h-2 bg-gray-200 rounded-full overflow-hidden;
+}
+
+.progressFill {
+  @apply h-full transition-all duration-300 ease-in-out;
+}
+
+.statValue {
+  @apply text-sm font-medium text-gray-900;
+}
+
+.flightInfo {
+  @apply bg-gray-50 rounded-lg p-4 mb-6;
+}
+
+.infoGrid {
+  @apply grid grid-cols-2 gap-4;
+}
+
+.infoItem {
+  @apply flex flex-col gap-1;
+}
+
+.infoLabel {
+  @apply text-xs text-gray-500;
+}
+
+.infoValue {
+  @apply text-sm font-medium text-gray-900;
+}
+
+.timeInfo {
+  @apply flex flex-col gap-4 mb-6;
+}
+
+.timeItem {
+  @apply flex justify-between items-center;
+}
+
+.timeLabel {
+  @apply text-sm text-gray-500;
+}
+
+.timeValue {
+  @apply text-sm font-medium text-gray-900;
+}
+
+.parameters {
+  @apply bg-gray-50 rounded-lg p-4;
+}
+
+.parameterGrid {
+  @apply grid grid-cols-2 gap-4;
+}
+
+.parameter {
+  @apply flex flex-col gap-1;
+}
+
+.parameterLabel {
+  @apply text-xs text-gray-500;
+}
+
+.parameterValue {
+  @apply text-sm font-medium text-gray-900;
+}
+
+/* Controls Component */
+.controls {
+  @apply flex gap-4;
+}
+
+.controlButton {
+  @apply inline-flex items-center gap-2 px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200 
+  focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.buttonIcon {
+  @apply w-5 h-5 stroke-2;
+}
+
+.pauseButton {
+  @apply bg-warning text-white hover:bg-warning-dark focus:ring-warning;
+}
+
+.resumeButton {
+  @apply bg-success text-white hover:bg-success-dark focus:ring-success;
+}
+
+.returnButton {
+  @apply bg-info text-white hover:bg-info-dark focus:ring-info;
+}
+
+.abortButton {
+  @apply bg-danger text-white hover:bg-danger-dark focus:ring-danger;
+}
+
+.abortButton.confirming {
+  @apply animate-pulse;
+}
+
+/* Map Component */
+.droneIcon {
+  @apply w-6 h-6 !important;
+}
+
+.droneIcon > div {
+  @apply w-full h-full bg-primary rounded-full border-2 border-white shadow-sm relative;
+}
+
+.droneIcon > div::after {
+  content: '';
+  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-b-[12px] border-b-white;
+}
+
+.waypointMarker {
+  @apply w-6 h-6 !important;
+}
+
+.waypointMarker > div {
+  @apply w-full h-full bg-warning rounded-full border-2 border-white shadow-sm flex items-center justify-center text-xs font-medium text-white;
+}
+
+.waypointMarker.completed > div {
+  @apply bg-success;
+}
+
+.loading {
+  @apply flex items-center justify-center h-full text-sm text-gray-500;
+}

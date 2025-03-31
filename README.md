@@ -1,3 +1,63 @@
+# Drone Survey Management System
+
+A full-stack application for planning, managing, and monitoring autonomous drone surveys across global facilities.
+
+## Table of Contents
+- [Features](#features)
+- [Technologies](#technologies)
+- [System Architecture](#system-architecture)
+- [AI Tools Used](#ai-tools-used)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Running the Application](#running-the-application)
+- [Testing](#testing)
+- [Design Decisions](#design-decisions)
+- [Safety Considerations](#safety-considerations)
+- [Future Improvements](#future-improvements)
+
+## Features
+
+### Mission Planning System
+- Define survey areas with polygonal selection on interactive maps
+- Configure flight paths with waypoints and altitudes
+- Set sensor parameters and capture intervals
+- Schedule one-time or recurring missions
+
+### Fleet Management Dashboard
+- View organization-wide drone inventory
+- Monitor real-time drone status (available, in-mission, maintenance)
+- Track battery levels and health metrics
+
+### Mission Monitoring Interface
+- Real-time flight path visualization
+- Mission progress tracking (% complete, ETA)
+- Control actions (pause, resume, abort)
+
+### Survey Reporting Portal
+- Detailed mission summaries
+- Flight statistics (duration, distance, coverage)
+- Organization-wide analytics
+
+## Technologies
+
+### Frontend
+- React/Next.js (TypeScript)
+- Leaflet.js for map visualization
+- Tailwind CSS for styling
+- WebSocket for real-time updates
+
+### Backend
+- Next.js API routes
+- PostgreSQL with PostGIS extension
+- Prisma ORM
+
+### Infrastructure
+- Vercel for deployment
+- PostgreSQL hosted on Vercel
+- WebSocket server for real-time communication
+
+## System Architecture
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
